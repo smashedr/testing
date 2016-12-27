@@ -1,4 +1,4 @@
-IMAGE: python:3.6
+IMAGE: python:3.4
 
 SCRIPT:
     - python -m pip install --upgrade pip
