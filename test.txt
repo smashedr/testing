@@ -1,1 +1,1 @@
-docker pull hangs
+docker pull hangs, but only randomly with no errors
