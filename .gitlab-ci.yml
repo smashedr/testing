@@ -1,0 +1,21 @@
+image: python:3.5
+
+before_script:
+  - apt-get -qq update -y >/dev/null
+  - apt-get -qq install -y python3-pip >/dev/null
+  - apt-get -qq install -y python3-dev >/dev/null
+  - apt-get -qq install -y python3-setuptools >/dev/null
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+  - pip install coverage
+  - pip install flake8
+
+django-test:
+  stage: test
+  script:
+    - cp settings.ini.example settings.ini
+    - python manage.py makemigrations
+    - python manage.py migrate
+    - coverage run manage.py test
+    - coverage report
+    - flake8
