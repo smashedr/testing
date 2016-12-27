@@ -1,21 +1,3 @@
 Hello World!
 
-This is going to be amazing...
-
-test1
-
-you know it, again
-
-i think we got it
-
-and now...
-
-sigh.
-
-ok. 
-
-finally?
-
-WE GOT IT BOYS
-:party:
-forgot to watch it
+Back to normal.
