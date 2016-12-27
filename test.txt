@@ -1,1 +1,1 @@
-new node 2 with script
+new node 2 with script with yaml
