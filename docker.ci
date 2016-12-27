@@ -1,0 +1,6 @@
+IMAGE: python:3.5
+
+SCRIPT:
+  - echo start
+  - ls
+  - echo done
