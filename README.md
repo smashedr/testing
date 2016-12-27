@@ -56,5 +56,3 @@ To deploy this project on the development server:
 6. `cp settings.ini.example settings.ini`
 7. Edit the settings to your preference.
 8. `python manage.py runserver 0.0.0.0:8000`
-
-
