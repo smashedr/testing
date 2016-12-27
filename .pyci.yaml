@@ -1,12 +1,12 @@
 IMAGE: python:3.6
 
 SCRIPT:
-    - python -m pip install --upgrade pip
-    - python -m pip install -r requirements.txt
-    - python -m pip install coverage flake8
-    - cp settings.ini.example settings.ini
-    - python manage.py makemigrations
-    - python manage.py migrate
-    - coverage run manage.py test
-    - coverage report
-    - flake8
+  - python -m pip install --upgrade pip
+  - python -m pip install -r requirements.txt
+  - python -m pip install coverage flake8
+  - cp settings.ini.example settings.ini
+  - python manage.py makemigrations
+  - python manage.py migrate
+  - coverage run manage.py test
+  - coverage report
+  - flake8
