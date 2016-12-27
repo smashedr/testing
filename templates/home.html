@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% load custom_filters %}
+
+{% block home_active %}active{% endblock %}
+{% block title %}Home{% endblock %}
+
+{% block head %}
+	<!-- Place page specific head code here -->
+{% endblock %}
+
+{% block body %}
+
+	<!-- Place page specific body code here -->
+	<div>
+
+		<h2>Home</h2>
+
+		<p>Hello There Fans!</p>
+
+		<p>{{ message }}</p>
+
+		<p>{% my_tag %}</p>
+
+		<p>
+			{% with my_tag as tag %}
+				{{ tag|my_filter:' Plus This.' }}
+			{% endwith %}
+		</p>
+
+	</div>
+
+{% endblock %}

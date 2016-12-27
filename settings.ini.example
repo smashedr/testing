@@ -1,0 +1,9 @@
+[App]
+debug = True
+secret = FhhH24zc2kWPVeM9c4PDU5qwzw7TEbt2VQDWKRFpgHXEJaldir
+allowed_hosts = localhost
+static_root = C:\tmp
+
+[Logging]
+level = DEBUG
+file = django.log

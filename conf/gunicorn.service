@@ -1,0 +1,16 @@
+[Unit]
+Description=django_bootstrap
+After=network.target
+
+[Service]
+PIDFile=/var/run/django_bootstrap.pid
+User=apache
+Group=apache
+WorkingDirectory=/websites/django_bootstrap
+ExecStart=/websites/django_bootstrap/venv/bin/gunicorn djbs.wsgi:application --workers 4 -b 127.0.0.1:8000 --log-file /websites/django_bootstrap/gunicorn.log
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
