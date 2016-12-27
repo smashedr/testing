@@ -5,5 +5,5 @@ allowed_hosts = localhost
 static_root = C:\tmp
 
 [Logging]
-level = DEBUG
+level = INFO
 file = django.log
